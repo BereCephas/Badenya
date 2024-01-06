@@ -16,7 +16,7 @@ export default function Programme() {
   return (
     <>
       <Header />
-      <div className="bg-gray-100 h-[90%] flex flex-col justify-center items-center p-10 md:pt-20">
+      <div className="h-[full] flex flex-col justify-center items-center p-10 md:pt-20">
         <div className="title">
           <h1 className="text-4xl underline underline-offset-8">
             Deuxieme trimestre
