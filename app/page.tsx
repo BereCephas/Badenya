@@ -7,10 +7,12 @@ import Footer from "../components/Footer";
 const Landing = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <Footer />
+      <main className="h-screen">
+        <Header />
+        <Hero />
+        <About />
+        <Footer />
+      </main>
     </>
   );
 };
