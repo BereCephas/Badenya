@@ -2,7 +2,7 @@ import kid from "../assets/Jean_baptiste_de_la_Salle.jpeg";
 
 const About = () => {
   return (
-    <div className=" bg-blansale  py-10 grid  lg:gap-y-12 ">
+    <div className=" bg-blansale  py-10 grid  lg:gap-y-12 text-mate ">
       <div className="bg-blansale  w-full h-full  z-20   flex justify-center items-center  ">
         <div className="md:px-10  grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 sm:gap-y-4 grid-rows-2 h-full w-full ">
           <div className="  h-full w-full  flex  items-center justify-center md:justify-start">

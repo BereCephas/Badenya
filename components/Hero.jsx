@@ -8,7 +8,7 @@ const Hero = () => {
           <h1 className="text-black text-4xl md:text-5xl 2xl:text-8xl font-extrabold pb-5">
             Bienvenue a Lasalle Badenya
           </h1>
-          <p className="font-light  text-sm lg:text-lg 2xl:text-3xl">
+          <p className="font-light  text-sm lg:text-lg 2xl:text-3xl ">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
             quas modi, possimus voluptas architecto perferendis ullam blanditiis
             beatae delectus commodi. Doloribus assumenda enim placeat inventore
