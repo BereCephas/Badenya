@@ -1,13 +1,13 @@
-import kid from "../assets/Jean_baptiste_de_la_Salle.jpeg";
-
+// import kid from "../assets/Jean_baptiste_de_la_Salle.jpeg";
+import Image from "next/image";
 const About = () => {
   return (
     <div className=" bg-blansale  py-10 grid  lg:gap-y-12 text-mate ">
       <div className="bg-blansale  w-full h-full  z-20   flex justify-center items-center  ">
         <div className="md:px-10  grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 sm:gap-y-4 grid-rows-2 h-full w-full ">
           <div className="  h-full w-full  flex  items-center justify-center md:justify-start">
-            <img
-              src={kid}
+            <Image
+              src={require("../assets/Jean_baptiste_de_la_Salle.jpeg")}
               alt=""
               className="h-full object-cover md:h-4/5 max-h-96 w-4/6 rounded-3xl"
             />
@@ -54,8 +54,8 @@ const About = () => {
           </div>
 
           <div className="  h-full  flex  justify-center md:justify-end items-center">
-            <img
-              src={kid}
+            <Image
+              src={require("../assets/Jean_baptiste_de_la_Salle.jpeg")}
               alt=""
               className="h-full object-cover md:h-4/5 xl:h-[40vh] max-h-96 w-4/6 rounded-3xl"
             />

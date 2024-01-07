@@ -15,26 +15,26 @@ export default function Programme() {
 
   return (
     <>
-      <main className="h-[screen] flex ">
-        <Header />
-        <div className=" h-[full] flex flex-col justify-center items-center p-10 md:pt-20">
-          <div className="title">
-            <h1 className="text-4xl underline underline-offset-8">
-              Deuxieme trimestre
-            </h1>
-          </div>
-          <div className="flex-grow">
-            <Accordion open={open === 1} placeholder={"l"}>
-              <AccordionHeader
-                placeholder={"l"}
-                onClick={() => handleOpen(1)}
-                className="pt-20"
-              >
-                <h1 className="text-3xl"> 1er cycle</h1>
-              </AccordionHeader>
-              <AccordionBody>
-                <div className="h-full flex justify-center items-center flex-col  w-full">
-                  <table className="table-auto min-w-full bg-white border border-gray-300">
+      <Header />
+      <div className=" h-[full] flex flex-col justify-center items-center p-10 pt-20 md:pt-20">
+        <div className="title">
+          <h1 className="text-4xl underline underline-offset-8">
+            Deuxieme trimestre
+          </h1>
+        </div>
+        <div className="flex-grow">
+          <Accordion open={open === 1} placeholder={"l"}>
+            <AccordionHeader
+              placeholder={"l"}
+              onClick={() => handleOpen(1)}
+              className="pt-20"
+            >
+              <h1 className="text-3xl text-left"> 1er cycle</h1>
+            </AccordionHeader>
+            <AccordionBody>
+              <div className="h-full flex w-[95vw] justify-center items-center flex-col">
+                <div className="table-container  overflow-x-auto max-w-full overflow-scroll snap-x max-w-screen">
+                  <table className="table-auto min-w-full bg-white border border-gray-300 sm:table">
                     <thead>
                       <tr>
                         <th className="py-2">#</th>
@@ -44,7 +44,6 @@ export default function Programme() {
                         <th className="py-2">mercredi 19</th>
                         <th className="py-2">vendredi 21</th>
                         <th className="py-2">Mercredi 26</th>
-                        <th className="py-2">vendredi 28</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -90,15 +89,17 @@ export default function Programme() {
                     </tbody>
                   </table>
                 </div>
-              </AccordionBody>
-            </Accordion>
-            <Accordion open={open === 2} placeholder={"l"}>
-              <AccordionHeader onClick={() => handleOpen(2)} placeholder={"l"}>
-                <h1 className="text-3xl"> 2nd cycle</h1>
-              </AccordionHeader>
-              <AccordionBody>
-                <div className="h-full flex justify-center items-center flex-col  w-full">
-                  <table className="table-auto min-w-full bg-white border border-gray-300">
+              </div>
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 2} placeholder={"l"}>
+            <AccordionHeader onClick={() => handleOpen(2)} placeholder={"l"}>
+              <h1 className="text-3xl text-left"> 2nd cycle</h1>
+            </AccordionHeader>
+            <AccordionBody>
+              <div className="h-full flex w-[95vw] justify-center items-center flex-col">
+                <div className="table-container  overflow-x-auto max-w-full overflow-scroll snap-x max-w-screen">
+                  <table className="table-auto min-w-full bg-white border border-gray-300 sm:table">
                     <thead>
                       <tr>
                         <th className="py-2">#</th>
@@ -157,15 +158,17 @@ export default function Programme() {
                     </tbody>
                   </table>
                 </div>
-              </AccordionBody>
-            </Accordion>
-            <Accordion open={open === 3} placeholder={"l"}>
-              <AccordionHeader onClick={() => handleOpen(3)} placeholder={"l"}>
-                <h1 className="text-3xl"> Programme des activites</h1>
-              </AccordionHeader>
-              <AccordionBody>
-                <div className="h-full flex justify-center items-center flex-col  w-full">
-                  <table className="table-auto min-w-full bg-white border border-gray-300">
+              </div>
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 3} placeholder={"l"}>
+            <AccordionHeader onClick={() => handleOpen(3)} placeholder={"l"}>
+              <h1 className="text-3xl text-left">Programme des activites</h1>
+            </AccordionHeader>
+            <AccordionBody>
+              <div className="h-full flex w-[95vw] justify-center items-center flex-col">
+                <div className="table-container  overflow-x-auto max-w-full overflow-scroll snap-x max-w-screen">
+                  <table className="table-auto min-w-full bg-white border border-gray-300 sm:table">
                     <thead>
                       <tr>
                         <th className="py-2">#</th>
@@ -224,14 +227,14 @@ export default function Programme() {
                     </tbody>
                   </table>
                 </div>
-              </AccordionBody>
-            </Accordion>
-          </div>
+              </div>
+            </AccordionBody>
+          </Accordion>
         </div>
-        <div className="absolute bottom-0 w-full">
-          <Footer />
-        </div>
-      </main>
+      </div>
+      <div className="fixed bottom-0 w-full">
+        <Footer />
+      </div>
     </>
   );
 }

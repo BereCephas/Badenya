@@ -1,4 +1,4 @@
-import { kid } from "../assets/kid.jpg";
+// import { kid } from "../assets/kid.jpg";
 import Image from "next/image";
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div className="bg-marron h-full w-full flex items-center justify-center p-3  ">
           <Image
-            src={kid}
+            src={require("../assets/kid.jpg")}
             alt=""
             className="h-4/5 object-cover md:h-4/5 max-h-96 w-4/6 rounded-3xl"
           />
