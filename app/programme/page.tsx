@@ -18,7 +18,7 @@ export default function Programme() {
       <Header />
       <div className=" h-[full] flex flex-col justify-center items-center p-10 pt-20 md:pt-20">
         <div className="title">
-          <h1 className="text-4xl underline underline-offset-8">
+          <h1 className="text-4xl underline underline-offset-8 text-left">
             Deuxieme trimestre
           </h1>
         </div>
