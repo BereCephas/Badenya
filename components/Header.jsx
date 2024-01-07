@@ -18,7 +18,7 @@ const Header = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed h-15 z-30  ">
+    <div className="shadow-md  fixed h-15 z-30  ">
       <div className="md:flex items-center justify-between bg-marron py-4  2xl:px-40 md:px-20 px-10">
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
           <span className="text-white lg:text-3xl 2xl:text-4xl">Lasalle</span>
