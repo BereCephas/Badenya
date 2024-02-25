@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-
+import Table from "@/components/Table";
 export default function Programme() {
   const [open, setOpen] = React.useState(1);
 
@@ -33,63 +33,10 @@ export default function Programme() {
             </AccordionHeader>
             <AccordionBody>
               <div className="h-full flex w-[95vw] justify-center items-center flex-col">
-                <div className="table-container  overflow-x-auto max-w-full overflow-scroll snap-x max-w-screen">
-                  <table className="table-auto min-w-full bg-white border border-gray-300 sm:table">
-                    <thead>
-                      <tr>
-                        <th className="py-2">#</th>
-                        <th className="py-2">Classes</th>
-                        <th className="py-2">Mercredi 12</th>
-                        <th className="py-2">vendredi 14</th>
-                        <th className="py-2">mercredi 19</th>
-                        <th className="py-2">vendredi 21</th>
-                        <th className="py-2">Mercredi 26</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="border px-4 py-2">1</td>
-                        <td className="border px-4 py-2">6e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">2</td>
-                        <td className="border px-4 py-2">5e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">3</td>
-                        <td className="border px-4 py-2">4e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">4</td>
-                        <td className="border px-4 py-2">3e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <Table/>
+ 
               </div>
+            
             </AccordionBody>
           </Accordion>
           <Accordion open={open === 2} placeholder={"l"}>
@@ -98,66 +45,7 @@ export default function Programme() {
             </AccordionHeader>
             <AccordionBody>
               <div className="h-full flex w-[95vw] justify-center items-center flex-col">
-                <div className="table-container  overflow-x-auto max-w-full overflow-scroll snap-x max-w-screen">
-                  <table className="table-auto min-w-full bg-white border border-gray-300 sm:table">
-                    <thead>
-                      <tr>
-                        <th className="py-2">#</th>
-                        <th className="py-2">Classes</th>
-                        <th className="py-2">Mercredi 12</th>
-                        <th className="py-2">vendredi 14</th>
-                        <th className="py-2">mercredi 19</th>
-                        <th className="py-2">vendredi 21</th>
-                        <th className="py-2">Mercredi 26</th>
-                        <th className="py-2">vendredi 28</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="border px-4 py-2">1</td>
-                        <td className="border px-4 py-2">2nde</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">2</td>
-                        <td className="border px-4 py-2">5e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                        <td className="border px-4 py-2">Philo</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">3</td>
-                        <td className="border px-4 py-2">4e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                        <td className="border px-4 py-2">Philo</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">4</td>
-                        <td className="border px-4 py-2">3e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                        <td className="border px-4 py-2">Philo</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <Table/>
               </div>
             </AccordionBody>
           </Accordion>
@@ -167,66 +55,7 @@ export default function Programme() {
             </AccordionHeader>
             <AccordionBody>
               <div className="h-full flex w-[95vw] justify-center items-center flex-col">
-                <div className="table-container  overflow-x-auto max-w-full overflow-scroll snap-x max-w-screen">
-                  <table className="table-auto min-w-full bg-white border border-gray-300 sm:table">
-                    <thead>
-                      <tr>
-                        <th className="py-2">#</th>
-                        <th className="py-2">Classes</th>
-                        <th className="py-2">Mercredi 12</th>
-                        <th className="py-2">vendredi 14</th>
-                        <th className="py-2">mercredi 19</th>
-                        <th className="py-2">vendredi 21</th>
-                        <th className="py-2">Mercredi 26</th>
-                        <th className="py-2">vendredi 28</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="border px-4 py-2">1</td>
-                        <td className="border px-4 py-2">2nde</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">2</td>
-                        <td className="border px-4 py-2">5e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                        <td className="border px-4 py-2">Philo</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">3</td>
-                        <td className="border px-4 py-2">4e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                        <td className="border px-4 py-2">Philo</td>
-                      </tr>
-
-                      <tr>
-                        <td className="border px-4 py-2">4</td>
-                        <td className="border px-4 py-2">3e</td>
-                        <td className="border px-4 py-2">Anglais</td>
-                        <td className="border px-4 py-2">Français</td>
-                        <td className="border px-4 py-2">Hg</td>
-                        <td className="border px-4 py-2">Math</td>
-                        <td className="border px-4 py-2">Svt</td>
-                        <td className="border px-4 py-2">Philo</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <Table/>
               </div>
             </AccordionBody>
           </Accordion>
