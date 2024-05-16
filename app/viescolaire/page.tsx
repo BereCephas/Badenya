@@ -51,7 +51,7 @@ export default function Viescolaire() {
               Les différents mouvements présents à Badenya
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Apprenez comment développer votre entreprise avec nos conseils d'experts.
+              Apprenez comment développer votre entreprise avec nos conseils d &apos;experts.
             </p>
           </div>
           {mouvements.map((mouvement) => (
