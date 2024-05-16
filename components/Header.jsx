@@ -43,7 +43,7 @@ const Header = () => {
               link,
               index // Added a key prop with index
             ) => (
-              <Link href={link.link} key={index}>
+              <Link href={link.link} key={index} className="text-white"> 
                 {link.name}
               </Link>
             )

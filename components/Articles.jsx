@@ -47,7 +47,8 @@ const Articles = () => {
 
   return (
     <>
-      <div className="h-full w-full flex flex-col items-center  xl:pl-44 xl:pr-44  md:pl-14 md:pr-14 sm:pl-10 sm:pr-10 gap-5 pt-10 pl-10 pr-10   ">
+      <div className="articles-container px-16 py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map((item) => {
           return (
             <div
@@ -95,6 +96,8 @@ const Articles = () => {
           );
         })}
       </div>
+      </div>
+
     </>
   );
 };

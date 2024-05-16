@@ -5,6 +5,7 @@ import MouvementCard from "../../components/MouvementCard";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import config from "../../config";
+
 interface Mouvement {
   id: number;
   name: string;
@@ -30,7 +31,7 @@ export default function Viescolaire() {
         } else {
           // Mise à jour de l'état avec les données récupérées
           console.log(data);
-          setMouvements(data);
+          setMouvements(data || []);
         }
       } catch (error) {
         console.error("Unexpected error:", error);
@@ -50,8 +51,7 @@ export default function Viescolaire() {
               Les différents mouvements présents à Badenya
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Apprenez comment développer votre entreprise avec nos conseils
-              d`&apos;`experts.
+              Apprenez comment développer votre entreprise avec nos conseils d'experts.
             </p>
           </div>
           {mouvements.map((mouvement) => (
