@@ -28,14 +28,14 @@ const Header = () => {
           onClick={() => setOpen(!open)}
           className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7"
         >
-          {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
+          {open ? <XMarkIcon color="white"/> : <Bars3BottomRightIcon color="white" />}
         </div>
         {/* link items */}
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-marron  gap-2 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open
-              ? "top-12 h-[50vh] flex flex-col justify-around"
-              : "top-[-490px] transition-all duration-5000 ease-in"
+              ? "top-12 h-[50vh] flex flex-col justify-around "
+              : "top-[-490px] transition-all duration-5000 ease-in "
           }`}
         >
           {Links.map(

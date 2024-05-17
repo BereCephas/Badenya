@@ -13,10 +13,10 @@ export default function Programme() {
 
   const handleOpen = (value: any) => setOpen(open === value ? 0 : value);
 
-  return (
-    <>
-      <Header />
-      <div className=" h-[full] flex flex-col justify-center items-center p-10 pt-20 md:pt-20">
+  return ( <>
+     <Header />
+    
+      <div className=" h-[full] flex flex-col justify-center items-center  w-[100vw]">
         <div className="title">
           <h1 className="text-4xl underline underline-offset-8 text-left">
             Deuxieme trimestre
@@ -32,7 +32,7 @@ export default function Programme() {
               <h1 className="text-3xl text-left"> 1er cycle</h1>
             </AccordionHeader>
             <AccordionBody>
-              <div className="h-full flex w-[95vw] justify-center items-center flex-col">
+              <div className="h-full flex w-full justify-center items-center flex-col">
                 <Table/>
  
               </div>
@@ -64,6 +64,7 @@ export default function Programme() {
       <div className="fixed bottom-0 w-full">
         <Footer />
       </div>
+
     </>
   );
 }

@@ -16,7 +16,7 @@ const devoirsData: Devoir[] = [
 
 const TableComponent: React.FC<{ devoirs: Devoir[] }> = ({ devoirs }) => {
   return (
-    <div className="overflow-x-auto w-full h-full flex flex-col justify-center">
+    <div className="overflow-x-auto w-[100vw] md h-full flex flex-col justify-center">
       <table className="w-full h-full table-auto">
         <thead>
           <tr className="bg-gray-100">
@@ -50,8 +50,7 @@ const TableComponent: React.FC<{ devoirs: Devoir[] }> = ({ devoirs }) => {
 
 const DevoirsChronogramme: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold mb-8">Devoirs Chronogramme</h1>
+    <div>
       <TableComponent devoirs={devoirsData} />
     </div>
   );

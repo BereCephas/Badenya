@@ -1,0 +1,47 @@
+/* styles.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  thead {
+    background-color: #f8f8f8;
+  }
+  
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    th, td {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    tr {
+      margin-bottom: 1rem;
+    }
+  
+    th, td {
+      text-align: right;
+    }
+  
+    th::before, td::before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  
+    th {
+      display: none;
+    }
+  }
+  
